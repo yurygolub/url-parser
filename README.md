@@ -1,11 +1,24 @@
-# Towers of Hanoi
+# Url Parser
 
 ## Description
-There are `3 towers` and `n disks` of different diameters which can slide onto any tower. Disks are sorted in ascending order of diameter from top to bottom (that is, each disk is located on top of a larger diameter disk).
-- Implement the algorithm for moving the disks of the first tower to the third recursively. The following restrictions apply:
-  - Only one drive can be moved at a time.
-  - The disk slid from the top of one tower to another tower.
-  - A disc cannot be placed on top of a smaller disc.
-- Develop unit tests.
 
-_Сравнить данное решение с предлженным самостоятельно._
+В текстовом файле построчно хранится информация об Url-адресах, представленных в виде
+
+    <scheme>://<host>/<url-path>?<parameters>
+
+где сегмент `parameters` - это набор пар вида `key=value`, при этом сегменты `url‐path` и `parameters` или сегмент `parameters` могут отсутствовать. 
+
+ - Разработать систему типов для экспорта данных, полученных на основе разбора информации текстового файла в XML-документ по следующему правилу, например, для текстового файла с Url-адресами
+
+    https://github.com/AnzhelikaKravchuk?tab=repositories
+    https://github.com/AnzhelikaKravchuk/2017-2018.MMF.BSU
+    https://habrahabr.ru/company/it-grad/blog/341486/
+
+результирующим является XML-документ вида (предусмотреть возможность получения XML-документа, используя любую XML технологию -  XmlReader/XmlWriter, X-DOM).
+ - Для тех Url-адресов, которые не совпадают с указанным шаблоном, выполнить логирование информации (предусмотреть возможность замены лог-фреймворка, в качестве логгера по умолчанию использовать `NLog`), отметив указанные строки, как необработанные.
+ - Продемонстрировать работу на примере консольного приложения.
+ - Для организации проектов solution-а использовать `Stairway`-паттерн.
+ - Для разрешения зависимостей использовать типы `Microsoft.Extensions.DependencyInjection`.
+ - Для тестирования основой функциональности использовать NUnit и Moq фреймворки.
+
+*При реализации системы типов учитывать возможность их использования в случае, когда в исходном текстовом файле информация об URL-адресах изменится на другую, иерарх/ически представимую информацию.
