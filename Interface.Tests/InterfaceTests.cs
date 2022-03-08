@@ -2,7 +2,7 @@
 using Moq;
 using NUnit.Framework;
 
-namespace Interface.Tests
+namespace Interfaces.Tests
 {
     [TestFixture]
     public class InterfaceTests

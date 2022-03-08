@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
-using Interface;
+using Interfaces;
 
 #pragma warning disable SA1116 // Split parameters should start on line after declaration
 

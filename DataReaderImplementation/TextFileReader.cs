@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using Interface;
+using Interfaces;
 
 namespace DataReaderImplementation
 {

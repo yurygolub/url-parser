@@ -2,7 +2,7 @@
 using System.IO;
 using DataReaderImplementation;
 using DataWriterImplementation;
-using Interface;
+using Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;

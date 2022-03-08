@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Interface
+namespace Interfaces
 {
     public interface IDataReader
     {

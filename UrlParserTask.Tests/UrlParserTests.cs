@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using DependencyResolver;
-using Interface;
+using Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using NUnit.Framework;
 

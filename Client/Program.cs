@@ -1,5 +1,5 @@
 ﻿using DependencyResolver;
-using Interface;
+using Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Client
